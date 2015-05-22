@@ -1,0 +1,413 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;border:0;}
+body{font-size:14px;font-family:"Microsoft YaHei", Verdana, Arial, Helvetica, Tahoma, Simsun, sans-serif;}
+img{border:none;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+body{ background-color:black; background-color:#d9d3b4; }
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.clearfix h3 {
+	font: 12px/1.5 tahoma,'Hiragino Sans GB','microsoft yahei',sans-serif;
+	font-size: 24px}
+
+/*header*/
+.headerBox
+{
+	/* background:url(../logo_img/banner.jpg) no-repeat; */
+	/*background-size:100%;*/
+	height:148px;
+	width:980px;
+	padding-top:5px;
+}
+.logo {width:192px;height:148px;margin-right:7px;}
+.logo img{height:137px;width:192px;}
+.header_middle
+{
+	width:601px;
+	height:137px;
+	background:white;
+}
+.header_middle ul
+{
+	padding-right:40px;
+}
+.header_middle ul li
+{
+	float:right;
+	padding:6px;
+	font-size:10px;
+}
+.searchBox
+{
+	clear:both;
+	width:512px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:18px;
+}
+.search_input
+{
+	width:405px;
+	height:35px;
+	border:3px solid #A63921;
+	border-right:none;
+	border-top-left-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+	padding:0 12px;
+}
+.search_btn
+{	
+	background:#A63921;
+	height:41px;
+	width:80px;
+	border:3px solid #A63921;
+	border-top-right-radius:0.3em;
+	border-bottom-right-radius:0.3em;
+	color:white;
+	font-size:18px;
+	font-weight:bold;
+	cursor: pointer;
+}
+.heatSearch
+{
+	padding:10px;
+	margin-top:35px;
+	color:#cc0000;
+	font-size:16px;
+	font-weight:bold;
+	font:14px/1.5 tahoma,'Hiragino Sans GB','microsoft yahei',sans-serif;
+}
+.sdCode
+{
+	padding:15px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+	overflow:hidden;
+	width:100px;
+}
+.left
+{
+	width:170px;
+	height:137px;
+	background:url(/static/img/banner.jpg) no-repeat;
+	background-size:200px 137px;
+}
+.sdCode img
+{
+	width:80px;
+	height:80px;
+}
+.ss
+{
+	width:80px;
+	margin:0;
+}
+.mm
+{
+	width:10px;
+	font-size:18px;
+	color:white;
+	padding:10px 0;
+	line-height:1em
+}
+/*main content*/
+/*left nav*/
+.side-guide-bar
+{
+	width:192px;
+	background:white;
+	
+	border-top-left-radius:0.3em;
+	border-bottom-left-radius:0.3em; 
+}
+.side-guide-bar ul
+{
+	padding:7px;
+}
+.side-guide-bar ul li
+{
+	font-size:12px;
+	padding:5px;
+}
+.side-guide-bar ul li+li
+{
+}
+.side-guide-bar ul li a
+{
+	font-size:12px;
+	padding:4px;
+}
+.side-guide-icons {
+    border-bottom:1px dashed #0bb;
+    padding: 4px 0 6px 15px;
+    height: 41px;
+}
+/*中间*/
+.content
+{
+	width:601px;
+	padding:0 7px;
+}
+.promote
+{
+	background:white;
+	border:5px solid white;
+}
+.tbg{
+	background-color: #d9d3b4;
+	margin-top: -5px;
+	margin-right: -5px;
+	margin-left: -5px;
+}
+
+.today
+{
+	border-bottom:1px dotted gray;
+}
+.today ul
+{
+	width:591px;
+	height:180px;
+	background-color:white;
+}
+.today ul li
+{
+	width:168px;
+	float:left;
+	margin:9px;
+	padding:0px 10px 0 0px;
+	border-right:1px solid gray;
+}
+
+.today ul li img
+{
+	width:158px;
+	height:126px;
+	padding:4px;
+}
+
+.today ul li.last
+{
+	border-right:none;
+} 
+
+
+
+
+.hotest
+{
+	width:591px;
+}
+.plain_nav
+{
+	width:591px;
+	background-color:white;
+}
+.plain_nav li
+{
+	float:left;
+	margin:5px 0px;
+	padding: 0 20px;
+}
+.plain_nav li:hover
+{
+	cursor:pointer;
+}
+.hiddenBox
+{
+	display:none;
+}
+.li-hover{
+    color: red;
+}
+
+.plain_main_content
+{
+	padding:10px;
+	background-color:white;;
+}
+.plain_first h3
+{
+	width:400px;
+	float:left;
+	padding-bottom:5px;
+}
+
+.plain_first img
+{
+	width:160px;
+	height:121px;
+	float:left;
+	padding:2px 10px 5px 0;
+}
+.brief_intro
+{
+	width:390px;
+	float:left;
+	text-indent:2em;
+}
+.info
+{
+	width:550px;
+	height:30px;
+	line-height:25px;
+	text-align:center;
+}
+
+/* .act1
+{
+	width:300px;
+	height:33px;
+} */
+.act1 li
+{
+	float:right;
+	height:33px;
+	font-size:14px;
+	text-align:buttom;
+	padding:2px;
+	margin-right: 10px;
+}
+.act1 li:hover
+{
+	cursor:pointer;
+}
+.more ul li
+{
+	float:left;
+	padding:7px;
+	text-align:left;
+	width:180px;
+	height: 220px;
+}
+.more ul li div
+{
+	font-size:12px;
+	background-size:12px 12px;
+	/*padding-left:14px;*/
+	background-position:center left;
+	font-weight: bold;
+	text-align: left;
+	width: 160px;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.more ul li img
+{
+	width:160px;
+	height:120px;
+}
+.provider
+{
+	width:110px;
+	float:left;
+	font-size:14px;
+	padding-left: 22px;
+	/*background:url(../logo_img/v.jpg) no-repeat center left;*/
+	background-size:16px 16px;
+}
+.provider span{
+	font-weight: 100px;
+	font-size: 10px;
+}
+.order_btn
+{
+	width:97px;
+	height:28px;
+	padding:2px;
+	background-color:#A63921;
+	color:white;
+	font-size:16px;
+	text-align:center;
+	border-radius:0.3em;
+}
+
+
+/*左边的导航*/
+.latest
+{
+	width:170px;
+	/*border:5px solid #333333;*/
+	margin-bottom:10px;
+	background-color:white;
+	margin-left:5px;
+	border-top-right-radius:0.3em;
+	border-bottom-right-radius:0.3em; 
+}
+.latest ul
+{
+	
+}
+.latest ul li
+{
+	padding:4px;
+	list-style-type:square;
+	margin-left:25px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.latest ul li a
+{
+	font-size: 12px;
+	font:"Microsoft YaHei", Verdana, Arial, Helvetica, Tahoma, Simsun, sans-serif;
+}
+.subtitle
+{
+	width:100px;
+	color:#cc0000;
+	padding:6px;
+	font-size:16px;
+	font-weight:bold;
+	background-color:white;		
+}
+.tCenter{
+	text-align: center;
+	border-top: #d9d3b4 5px solid;
+}
+.side-guide-icons h3{
+	margin-top: -15px;
+	margin-bottom: -10px;
+}
+
+/* .nav li
+{
+	float:left;
+	background-color:#d9d3b4;
+	margin:5px;
+}  */
+/*通用的样式*/
+.comWidth
+{
+	width:982px;
+	margin:auto;
+}
+.fl{float:left;}
+.fr{float:right;}
+a{
+	color: inherit;
+}
+a:hover{
+	text-decoration: underline;
+}
+.plain_nav li + li{
+	border-left: 2px solid black;
+}
+button{
+	cursor: pointer;
+	font-family: Microsoft YaHei;
+}
+
+.name {
+	color:#3698bf;
+}
+
+.time
+{
+	color:#d9732b;
+}

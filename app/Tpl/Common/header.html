@@ -1,0 +1,54 @@
+<div class="headerBox comWidth clearfix">
+		<div class="header">
+			<div class="logo fl">
+				<a href="domainURL">
+					<img src="/static/img/logo.png" alt="xiaotao" />
+				</a>
+			</div>
+			<div class = "header_middle fl">
+				<ul class="fr">
+					<li>|&nbsp
+						<a href="domainURL/Pub">免费发布信息</a>
+					</li>
+
+					<present name="_SESSION['uname']">
+						<li>
+						<a href="javascript:void(0);" id="loginout" class="login-out" >
+							退出
+						</a>
+						</li>
+						<li>
+						<a href="domainURL/Account/info">欢迎,{$_SESSION['uname']}</a>
+						</li>
+						
+					<else />
+						<li>
+						<a href="domainURL/Login">会员登陆</a>
+						</li>
+						<li>
+						<a href="domainURL/Register">免费注册</a></li>
+						</li>
+					</present>
+
+				</ul>
+				<div class="searchBox">
+				<div>
+					<input type="text" class="search_input fl" id="search-input-box" />
+					<input type="submit" class="search_btn fl site-search-btn" value="搜索"/>
+				</div>
+					<div class="heatSearch">
+						热门搜索：
+						<a href="/Search/index?search=英语&amp;type=4&amp;sub=0&amp;low=0&amp;high=20000">英语&nbsp&nbsp</a>
+					</div>
+				</div>
+			</div>
+			<div class="left fr">
+				<div class="sdCode fl">
+					<img src="/static/img/qrcode.jpg" alt="xiaotao">
+					<div class="ss">扫一扫</div>
+					
+				</div>
+				<div class="mm fl">手机也能乐淘</div>
+			</div>
+		</div>
+	</div>

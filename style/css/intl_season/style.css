@@ -1,0 +1,60 @@
+.play
+{
+	width:587px;
+	height:311px;
+	background:white;
+	padding:0 7px 7px 7px;
+	position:relative;
+}
+.big_pic
+{
+	width:428px;
+	height:311px;
+	overflow:hidden;
+	background:white;
+}
+.big_pic li
+{
+	width:428px;
+	height:311px;
+	position:relative;
+	top:5px;
+	left:0;
+	z-index:0;
+}
+.big_pic img
+{
+	width:428px;
+	height:311px;
+}
+
+.small_pic
+{
+	width:150px;
+	height:311px;
+	position:absolute;
+	overflow:hidden;
+	top:2px;
+	right:10px;
+}
+
+.small_pic li
+{
+	width:150px;
+	height:100px;
+	float:left;
+	cursor:pointer;
+	margin: 2px;
+}
+.small_pic img
+{
+	width:150px;
+	height:100px;
+}
+
+
+
+
+
+
+

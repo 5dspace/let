@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>乐淘花店管理入口</title>
+ </head>
+ <body>
+		<div>
+			订花微信订单
+		</div>
+		<div>
+			<volist name="data" id="order">
+				{$order.content} &nbps&nbps {$order.created|date="y-m-d H:i",###}
+				<br />
+			</volist>
+		</div>
+ </body>
+
+</html>

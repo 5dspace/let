@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>收获地址管理 | 个人中心</title>
+        <include file="Common:meta-css-js" />
+        <link type="text/css" rel="stylesheet" href="/style/css/common/account-global.css?v={$VERSION}" />
+        <link type="text/css" rel="stylesheet" href="/style/css/intl_account/v1/changePassword.css?v={$VERSION}" />
+    </head>
+    <style>
+
+    </style>
+    <body>
+       <include file="Common:header" />
+         <div class="site-main bg-index-site">
+            <div class="account-content site-body">
+               <include file="Account:leftmenu" />
+                <div id="user-detail" class="user-detail">
+                    <!--  此处显示用户已保存的地址 -->
+
+
+                    <h2>添加地址</h2>
+                    <ul id="user-addr" class="user-detail-list">
+                        <li><div id="tip"></div></li>
+                        <li>
+                            <label for="name" class="detail-title">收货人姓名</label>
+                            <input type="text" placeholder="张三" id="name"/>
+                        </li>
+                        <li>
+                            <label for="address" class="detail-title">详细地址</label>
+                            <input type="text" placeholder="请精确到宿舍房号" id="address" />
+                        </li>
+                        <li>
+                            <label for="phone" class="detail-title">手机号</label>
+                            <input type="text" placeholder="手机长号" id="phone" />
+                        </li>
+                         <li style="margin-left: 220px;">
+                            <div class="btn btn-blue" id="save-addr">确认</div>
+                            <div class="btn btn-danger" id="cancel">取消</div>
+                        </li>
+                    </ul>
+                    <div id="addressList">
+                        <h2>地址列表</h2>
+                        <ul class="user-detail-list">
+                            <volist name="addrs" id="value">
+                                <li>
+                                    <div class="detail-title">  
+                            {$value['addr']}&nbsp;&nbsp;{$value['consignee']}&nbsp;&nbsp;{$value['phone']}
+                                    </div>
+                               </li>
+                            </volist>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <include file="Public:foot" />
+        <script type="text/javascript" src="/style/js/intl_account/v1/addAddress.js?v={$VERSION}"></script>
+    </body>
+</html>

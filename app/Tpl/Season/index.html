@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;">
+	<title>【乐淘】-免费发布信息-本地 免费 高效-广东-中山大学</title>
+	<include file="Common:meta-css-js" />
+	<link href="/style/css/intl_season/foucus.css?v={$VERSION}" rel="stylesheet" type="text/css">
+</head>
+	<link href="http://bdimg.share.baidu.com/static/css/bdsstyle.css?cdnversion=20131219" rel="stylesheet" type="text/css">
+<body screen_capture_injected="true">
+	<include file="Common:header" />
+	<div class="main comWidth">
+		<include file="Common:menu" />
+		<div class="content fl">
+			<include file="Common:foucus2" />
+			<div class = "promote">
+				<div class="today clearfix">
+					<div class="tbg">
+						<div class="subtitle tCenter">今日推介 </div>
+					</div>
+					<ul id="to">
+						<li class="subtitle ">
+							<a href="domainURL/Search/index?type=39&sub=40&low=0&high=20000">
+								<div>| 毕业T</div>
+								<img src = "/static/foucus_img/ctrlTss.jpg"/>
+							</a>
+						</li>
+						<li class="subtitle">
+							<a href="http://t.xiaoplus.com/Account/user/u/41986811">
+								<div>| 毕业花束</div>
+								<img src = "/static/img/flowers2.png"/>
+							</a>
+						</li>
+						<li class="last subtitle ">
+							<a href="http://t.xiaoplus.com/Account/user/u/19069485">
+								<div>| 毕业礼物</div>
+								<img src = "/static/img/gifts2.png"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="hotest clearfix">
+					<div class="tbg">
+						<ul class="clearfix">
+							<li class="subtitle tCenter" title="1" >
+								<a href="#">最新产品</a>
+							</li>
+						</ul>
+					</div>
+
+					<div id="ho">
+						<li id="box_1" class="hiddenBox" style="display: block">
+						<div class="more clearfix">
+							<ul>
+							<volist name="lastest" id="vo2">
+								<li>
+									<a href="domainURL/Detail/index/id/{$vo2['pub_id']}">
+										<img src = "imgURL/{$vo2['image_data']}"/>
+									</a>
+									
+									<div title="{$vo2['title']}">
+										<a href="domainURL/Detail/index/id/{$vo2['pub_id']}">
+									 {$vo2['title']}</a></div>
+									<br />
+									<div class="provider">
+										<span class="name">
+											<a href="domainURL/Account/user/u/{$vo2['xiaoplus']}">
+												{$vo2['saler']}&nbsp&nbsp&nbsp&nbsp
+											</a>
+											</span>
+										<span class="time">
+											{$vo2['ctime']|date="n月j日", ###}&nbsp&nbsp
+										</span>
+										<span class="name">库存{$vo2['stock']}</span>
+									</div>
+									<!-- <div>
+										<if condition="$currentTime egt 1399806000">
+
+										<button class="order_btn">
+											<a href="domainURL/Trade/index/id/{$vo2['pub_id']}">
+												立即下单
+											</a>
+										</button>
+									<else />
+										<button class="order_btn">
+											<a href="">
+												等待抢购
+											</a>
+										</button>
+									</if>
+									</div> -->
+									
+								</li>
+							</volist>
+							</ul>
+						</div>
+					</li>
+
+					</div>
+			<!-- 	<div id="ho">
+					<ul class="plain_nav clearfix">
+						<li id="li_1"><a href="#">2元区</a></li>
+						<li id="li_2"><a href="#">5元区</a></li>
+						<li id="li_3"><a href="#">10元区</a></li>
+						<li id="li_4"><a href="#">20元区</a></li>
+						<li id="li_5"><a href="#">ctrlT </a></li>
+					</ul>
+					<li id="box_1" class="hiddenBox" style="display: block">
+						<div class="more clearfix">
+							<ul>
+							<volist name="pubOf2" id="vo2">
+								<li>
+									<a href="domainURL/Detail/index/id/{$vo2['pub_id']}">
+										<img src = "imgURL/{$vo2['image_data']}"/>
+									</a>
+									
+									<div title="{$vo2['title']}">
+										<a href="domainURL/Detail/index/id/{$vo2['pub_id']}">
+									 {$vo2['title']}</a></div>
+									<br />
+									<div class="provider">
+										<span class="name">
+											<a href="domainURL/Account/user/u/{$vo2['xiaoplus']}">
+												{$vo2['saler']}&nbsp&nbsp&nbsp&nbsp
+											</a>
+											</span>
+										<span class="time">
+											{$vo2['ctime']|date="n月j日", ###}&nbsp&nbsp
+										</span>
+										<span class="name">库存{$vo2['stock']}</span>
+									</div>
+									<div>
+										<if condition="$currentTime egt 1399806000">
+
+										<button class="order_btn">
+											<a href="domainURL/Trade/index/id/{$vo2['pub_id']}">
+												立即下单
+											</a>
+										</button>
+									<else />
+										<button class="order_btn">
+											<a href="">
+												等待抢购
+											</a>
+										</button>
+									</if>
+									</div>
+									
+								</li>
+							</volist>
+							</ul>
+						</div>
+					</li>
+
+
+					<li id="box_2" class="hiddenBox">
+						<div class="more clearfix">
+							<ul>
+							<volist name="pubOf5" id="vo5">
+								<li>
+									<a href="domainURL/Detail/index/id/{$vo5['pub_id']}">
+										<img src = "imgURL/{$vo5['image_data']}"/>
+									</a>
+									
+									<div title="{$vo5['title']}">
+										<a href="domainURL/Detail/index/id/{$vo5['pub_id']}">
+									 {$vo5['title']}</a></div>
+									<br />
+									<div class="provider">
+										<span class="name">
+											<a href="domainURL/Account/user/u/{$vo5['xiaoplus']}">
+												{$vo5['saler']}&nbsp&nbsp&nbsp&nbsp
+											</a>
+										</span>
+										<span class="time">
+											{$vo5['ctime']|date="n月j日", ###}&nbsp&nbsp
+										</span>
+										<span class="name">库存{$vo5['stock']}</span>
+									</div>
+									<div>
+										<if condition="$currentTime egt 1399806000">
+
+										<button class="order_btn">
+											<a href="domainURL/Trade/index/id/{$vo5['pub_id']}">
+												立即下单
+											</a>
+										</button>
+									<else />
+										<button class="order_btn">
+											<a href="">
+												等待抢购
+											</a>
+										</button>
+									</if>
+									</div>
+									
+								</li>
+							</volist>
+							</ul>
+						</div>
+					</li>
+					
+					<li id="box_3" class="hiddenBox">
+						<div class="more clearfix">
+							<ul>
+							<volist name="pubOf10" id="vo10">
+								<li>
+									<a href="domainURL/Detail/index/id/{$vo10['pub_id']}">
+										<img src = "imgURL/{$vo10['image_data']}"/>
+									</a>
+									
+									<div title="{$vo10['title']}">
+										<a href="domainURL/Detail/index/id/{$vo10['pub_id']}">
+									 {$vo10['title']}</a></div>
+									<br />
+									<div class="provider">
+										<span class="name">
+											<a href="domainURL/Account/user/u/{$vo10['xiaoplus']}">
+												{$vo10['saler']}&nbsp&nbsp&nbsp&nbsp
+											</a>
+										</span>
+										<span class="time">
+											{$vo10['ctime']|date="n月j日", ###}&nbsp&nbsp
+										</span>
+										<span class="name">库存{$vo10['stock']}</span>
+									</div>
+									<div>
+										<if condition="$currentTime egt 1399806000">
+
+										<button class="order_btn">
+											<a href="domainURL/Trade/index/id/{$vo10['pub_id']}">
+												立即下单
+											</a>
+										</button>
+									<else />
+										<button class="order_btn">
+											<a href="">
+												等待抢购
+											</a>
+										</button>
+									</if>
+									</div>
+									
+								</li>
+							</volist>
+							</ul>
+						</div>
+					</li>
+					<li id="box_4" class="hiddenBox">
+						<div class="more clearfix">
+							<ul>
+							<volist name="pubOf20" id="vo20">
+								<li>
+									<a href="domainURL/Detail/index/id/{$vo20['pub_id']}">
+										<img src = "imgURL/{$vo20['image_data']}"/>
+									</a>
+									
+									<div title="{$vo20['title']}">
+										<a href="domainURL/Detail/index/id/{$vo20['pub_id']}">
+									 {$vo20['title']}</a></div>
+									<br />
+									<div class="provider">
+										<span class="name">
+											<a href="domainURL/Account/user/u/{$vo20['xiaoplus']}">
+												{$vo20['saler']}&nbsp&nbsp&nbsp&nbsp
+											</a>
+										</span>
+										<span class="time">
+											{$vo20['ctime']|date="n月j日", ###}&nbsp&nbsp
+										</span>
+										<span class="name">库存{$vo20['stock']}</span>
+									</div>
+									<div>
+										<if condition="$currentTime egt 1399806000">
+
+										<button class="order_btn">
+											<a href="domainURL/Trade/index/id/{$vo20['pub_id']}">
+												立即下单
+											</a>
+										</button>
+									<else />
+										<button class="order_btn">
+											<a href="">
+												等待抢购
+											</a>
+										</button>
+									</if>
+									</div>
+									
+									</li>
+								</volist>
+								</ul>
+							</div>
+					</li>
+					<li id="box_5" class="hiddenBox">
+						<div class="more clearfix">
+							<ul>
+							<volist name="CtrlTs" id="ctrlT">
+								<li>
+									<a href="domainURL/Detail/index/id/{$ctrlT['pub_id']}">
+										<img src = "imgURL/{$ctrlT['image_data']}"/>
+									</a>
+									
+									<div title="{$ctrlT['title']}">
+										<a href="domainURL/Detail/index/id/{$ctrlT['pub_id']}">
+									 {$ctrlT['title']}</a></div>
+									<br />
+									<div class="provider">
+										<span class="name">
+											<a href="domainURL/Account/user/u/{$ctrlT['xiaoplus']}">
+												{$ctrlT['saler']}&nbsp&nbsp&nbsp&nbsp
+											</a>
+										</span>
+										<span class="time">
+											{$ctrlT['ctime']|date="n月j日", ###}&nbsp&nbsp
+										</span>
+										<span class="name">库存{$ctrlT['stock']}</span>
+									</div>
+									<div>
+										<if condition="$currentTime egt 1399806000">
+
+										<button class="order_btn">
+											<a href="domainURL/Trade/index/id/{$ctrlT['pub_id']}">
+												立即下单
+											</a>
+										</button>
+									<else />
+										<button class="order_btn">
+											<a href="">
+												等待抢购
+											</a>
+										</button>
+									</if>
+									</div>
+									
+									</li>
+								</volist>
+								</ul>
+							</div>
+					</li>
+
+				</div>
+ -->
+
+				</div>
+			</div>
+		</div>
+	<include file="Common:rightbar" />
+	</div>
+	<include file="Common:footer" />
+</body>
+		</html>

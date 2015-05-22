@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{$pubData['title']}&nbsp;-&nbsp;购买&nbsp;-&nbsp;乐淘</title>
+    <include file="Common:meta-css-js" />
+
+    <link type="text/css" rel="stylesheet" href="/style/css/intl_trade/v1/buy.css?v={$VERSION}"/>   
+</head>
+<body>
+    <include file="Common:header" />
+    <input id="getpub_id" value="{$pubData['pub_id']}" style="display:none"></input>
+    <div class="site-main bg-index-site">
+        <div class="site-body buy">
+            <div class="crumb detail-crumb"> <b>填写并核订单信息</b>
+            </div>
+            <div class="buy-step">
+                <div class="step-title">选择收货地址</div>
+                <ul class="step-contain">
+                    <volist name="addrs" id="vo">
+                        <li><input type="radio" name="addrID" id="addr{$i}"/><label for="addr">{$vo['consignee']}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{$vo['phone']}&nbsp&nbsp&nbsp&nbsp&nbsp {$vo['addr']}</label><a href="#" class="addr-delete">删除</a></li>
+                    </volist>
+                    <li>
+                        <a href="#" class="buy-link" id="add-newAddr">添加新地址</a>
+                        <div class="new-addr">
+                            <form onsubmit="return false" id="add-newAddr-form">
+                                <label for="addr-reciver"><span class="step-must">*</span>收货人</label>
+                                <input type="text" id="addr-reciver" name="name"><span class="fillform-notice" /></span>
+                                <br/>
+                                <label for="addr-tel"><span class="step-must">*</span>联系电话</label>
+                                <input type="text" name="tel" id="addr-tel" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" / ><span class="fillform-notice"></span><br/>
+                                <label for="addr-addr"><span class="step-must">*</span>收货地址</label>
+                                <input type="text" name="address" id="addr-addr"><span class="fillform-notice" /></span><br/>
+                                
+                                <button class="btn-small btn-blue" >保存地址</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="buy-step">
+                <div class="step-title">
+                    确认商品信息
+                </div>
+                <table class="step-contain">
+                    <tr>
+                        <th class="th1">卖家</th>
+                        <th class="th2">商品</th>
+                        <th class="th3">单价</th>
+                        <th class="th4">数量</th>
+                        <th class="th5">小计</th>
+                    </tr>
+                    <tr >
+                        <td class="bottom-line">{$pubData['saler']}</td>
+                        <td class="bottom-line" align="left"><img src="imgURL/{$pubData['image_data']}"/>
+                            <a href="domainURL/Detail/index/id/{$pubData['pub_id']}">{$pubData['title']}</a>
+                            <td class="bottom-line">{$pubData['price']}</td>
+                        <td class="bottom-line">x 1</td>
+                        <td class="bottom-line">{$pubData['price']}</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="buy-step">
+                <!-- 订单提交form -->
+                
+                <div class="step-contain">
+                    <label for="buy-attachment">附言</label> 
+                    <input type="text" id="buy-attachment" name="attachment"/>
+               
+                    <button class="btn btn-blue fr" id="sumbitOrder">提交订单</button>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <include file="Public:foot" />
+
+    <script type="text/javascript" src="/style/js/common/jquery-1.10.2.min.js"></script>
+
+    <script type="text/javascript" src="/style/js/intl_trade/v1/buy.js?v={$VERSION}"></script>
+    </body>
+</html>
